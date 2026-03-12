@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   title: "Loox Car Detailing | Premium Autodetailing Eindhoven",
   description:
     "Premium autodetailing in Eindhoven. Professioneel wassen, polijsten en dieptereiniging van uw interieur. Boek direct online.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  // maximumScale is intentionally omitted so pinch-zoom still works
 };
 
 export default function RootLayout({
